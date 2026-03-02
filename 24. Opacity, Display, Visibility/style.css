@@ -1,0 +1,23 @@
+body {
+  background-image: url(./img/bg.jpg);
+}
+
+h2 {
+  /* độ trong suốt */
+  /* opacity: 0; */
+
+  /* Ẩn phần tử khỏi giao diện (Xoá cả không gian nó đang chiếm) */
+  /* display: none; */
+
+  /* Ẩn hoặc hiện element */
+  visibility: hidden;
+  /* Không tương tác được */
+
+  background-color: blue;
+}
+
+span {
+  /* opacity: 1; */
+  /* display: block; */
+  visibility: visible;
+}
