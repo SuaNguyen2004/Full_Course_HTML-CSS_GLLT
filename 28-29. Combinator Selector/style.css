@@ -1,3 +1,10 @@
+/* p,
+.demo,
+#title {
+  color: red;
+} */
+
+/* Chọn thẻ có tên class là demo và demo2 */
 .demo.demo2 {
   color: red;
 }
