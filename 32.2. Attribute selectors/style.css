@@ -1,0 +1,36 @@
+/* Chọn tất cả thẻ có thuộc tính title 
+có chứa tuhoc.cc trong giá trị */
+
+/* [title~="tuhoc.cc"]{
+  color: red;
+} */
+
+/* Chọn tất cả các thuộc tính 
+title có chứa tuhoc.cc trong giá trị*/
+
+/* [title*="tuhoc.cc"] {
+  color: red;
+} */
+
+/* Chọn tất cả các thuộc tính title có từ duy nhất 
+bắt đầu bằng từ pic (pic,pic-123) */
+/* Có thể hiểu là 1 từ duy nhất, bắt đầu bằng pic, 
+sau pic phải được nối bằng gạch ngang */
+/* Tức là pic phải là đầu tiên mới dùng được */
+
+/* [title|="pic"] {
+  color: pink;
+} */
+
+/* Chọn tất cả các thuộc tính title bắt đầu 
+bằng pic (Không quan tâm space đằng sau) */
+
+/* [title^="pic"] {
+  color: pink;
+} */
+
+/* Chọn tất cả các thẻ có thuộc tính 
+title kết thúc bằng ký tự abc123 */
+[title$="abc123"] {
+  color: pink;
+}

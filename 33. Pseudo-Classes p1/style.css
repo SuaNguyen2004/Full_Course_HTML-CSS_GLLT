@@ -1,0 +1,24 @@
+/* Chọn các thẻ p khi di chuột qua */
+/* p:hover {
+  color: red;
+  font-size: 30px;
+} */
+
+/* Chỉ tác động lên phần tử 
+có id là line2 */
+#line2:hover {
+  color: red;
+  font-size: 33px;
+}
+
+/* Dùng cho class */
+/* .di_chuot:hover {
+  color: red;
+  font-size: 33px;
+} */
+
+/* Chọn các thẻ a khi nhấn giữ chuột */
+.di_chuot:active {
+  color: red;
+  font-size: 33px;
+}

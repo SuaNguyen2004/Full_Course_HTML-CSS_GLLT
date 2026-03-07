@@ -1,0 +1,15 @@
+/* Tác động với tất cả các thẻ có thuộc tính 
+href nằm trong thẻ mở  */
+
+/* [href]{
+  color: red;
+} */
+
+/* Chỉ tác động vào thẻ a có thuộc tính href */
+p[href] {
+  color: red;
+}
+
+[target="_blank"] {
+  color: pink;
+}

@@ -1,0 +1,21 @@
+/* Đứng sát ngay sau dùng + */
+/* Tức là dùng cho thẻ h2 đứng ngay sau h1 */
+/* Nếu ngay sau thẻ h1 không phải h2 thì không dùng được */
+
+/* h1 + h2 {
+  color: red;
+}
+.demo.demo2 + h3, p {
+  color: blue;
+} */
+
+/* Tất cả các thuộc tính bên phải 
+sau thuộc tính bên trái dùng dấu ~ */
+/* Kể cả trước đó có cặp thẻ khác */
+h1 ~ h3 {
+  color: blue;
+}
+
+div ~ div {
+  color: red;
+}

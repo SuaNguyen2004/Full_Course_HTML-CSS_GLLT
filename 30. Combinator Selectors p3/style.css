@@ -1,0 +1,23 @@
+/* Tác động vào toàn bộ thẻ p nằm trong thẻ div */
+/* div p {
+  color: blue;
+} */
+
+/* Tất cả thẻ p nằm trong class loichuc */
+/* .loichuc p{
+    font-size: 30px;
+} */
+
+/* Chọn tất cả các thẻ p là con trực tiếp của thẻ div */
+/* Tức là div là cấp 1 thì thẻ p cấp 2 mới dùng được 
+còn thẻ khác là cấp 2 và trong nó có 1
+thẻ p nữa tức thẻ p là cấp 3 thì không dùng được */
+
+/* Tác động lên thẻ p là con trực tiếp của div */
+div > p {
+  color: blue;
+}
+/* Tác động lên thẻ p là con của block */
+block p {
+  color: red;
+}
