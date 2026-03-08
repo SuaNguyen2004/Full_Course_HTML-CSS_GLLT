@@ -1,0 +1,56 @@
+/* 1. Tác dụng trên selector khi di chuột qua */
+/* p:hover {
+  color: red;
+  font-size: 30px;
+} */
+
+/* Chỉ tác động lên phần tử 
+có id là line2 */
+#line2:hover {
+  color: red;
+  font-size: 33px;
+}
+
+/* Dùng cho class */
+/* .di_chuot:hover {
+  color: red;
+  font-size: 33px;
+} */
+
+/* 2. Tác dụng lên selector khi nhấn và giữ chuột */
+.di_chuot:active {
+  color: red;
+  font-size: 33px;
+}
+
+/* 3. Tác dụng lên selector khi chưa click vào */
+.click_me:link {
+  color: chocolate;
+}
+
+/* 4. Tác dụng lên selector khi đã click truy cập */
+.click_me:visited {
+  color: red;
+}
+
+/* 5. Tác dụng lên selctor khi không có nội dung */
+.div_elm:empty {
+  /* w200 */
+  width: 200px;
+  /* h200 */
+  height: 200px;
+  background-color: blue;
+}
+
+.div_elm {
+  /* w200 */
+  width: 200px;
+  /* h200 */
+  height: 200px;
+  background-color: red;
+}
+
+/* 6. Tác dụng lên selector khi trên URL có hash tương ứng */
+h2:target {
+  color: blue;
+}
