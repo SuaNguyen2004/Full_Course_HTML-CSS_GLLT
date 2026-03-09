@@ -1,0 +1,17 @@
+/* 1. Outline: Là đường viền bao quanh mép ngoài cùng của đối tượng
+ - Không làm tăng thêm kích thước phần tử
+ - Đơn giản nó chỉ là 1 vùng bao bên ngoài, chiếm cả vào phần margin */
+
+/* 2. Không áp dụng được vẽ theo nhiều chiều như border */
+/* 3. Có thêm thuộc tính outline-offset */
+
+/* outline-offset dùng để offset 1 khoảng từ border ra ngoài */
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  /* border: 10px solid red; */
+  outline: 20px solid blue;
+  outline-offset: 10px;
+  margin: 40px;
+}

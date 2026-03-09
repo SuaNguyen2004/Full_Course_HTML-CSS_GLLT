@@ -1,0 +1,27 @@
+/* Thứ tự ưu tiên (mạnh -> yếu) áp dụng khi có nhiều thuộc tính chồng chéo nhau cùng tác động lên 1 phần tử */
+/* 1. !important
+2. Inline style ( viết trên code HTML)
+3. ID(#) selector
+4. Class (.) hoặc pseudo-class (:) selector
+5. Element selector (h, p. li. div, .... )
+6. Universal selector (*) : Bộ chọn chung */
+
+/* universal selector */
+* {
+  color: red;
+}
+
+/* element selector */
+h1 {
+  color: blue !important;
+}
+
+/* class - pseudo class */
+.demo {
+  color: green;
+}
+
+/* id */
+#theh1 {
+  color: yellow;
+}

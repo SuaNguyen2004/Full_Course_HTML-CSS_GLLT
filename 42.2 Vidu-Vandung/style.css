@@ -1,0 +1,22 @@
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: red;
+}
+
+.box1 {
+  border: 10px solid blue;
+}
+
+.box2 {
+  border: 20px solid rgb(32, 222, 89);
+  /* margin: 0px 160px;  thử làm :))*/
+  margin-left: 160px;
+}
+
+.box3 {
+  border: 30px solid rgb(89, 156, 227);
+  /* margin: 0px 340px; thử làm :)) */
+  margin-left: 340px;
+}

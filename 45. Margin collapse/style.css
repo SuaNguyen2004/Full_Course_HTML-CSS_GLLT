@@ -1,0 +1,39 @@
+/* Margin Collapse: Là hiện tượng chồng lặp thuộc tính margin khi 2 phần tử 
+liền kề cùng thiết lập margin với phần tử còn lại theo chiều dọc */
+
+/* Cách xử lý hiện tượng margin collapse */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+}
+
+.box1 {
+  margin-bottom: 50px;
+}
+
+.box2 {
+  margin-top: 70px;
+}
+
+
+/* Margin Collapse: Chú ý Theo chiều ngang, các phần tử không bị hiện tượng này */
+/* margin collapse không bị theo chiều ngang */
+/* .item{
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+.item1{
+    display: block; - chạy thì comment
+    margin-right: 10px;
+}
+
+.item2{
+    margin-left: 20px;
+} */

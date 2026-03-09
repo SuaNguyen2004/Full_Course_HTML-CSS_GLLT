@@ -1,0 +1,11 @@
+/* 1. Chọn các thẻ có class = "top" loại trừ thẻ <p> */
+/* Tức là áp dụng cho tất cả các thẻ trong class trừ thẻ p */
+
+/* Viết tắt bgc */
+/* .top:not(p){
+  background-color: yellow; 
+} */
+
+.top:not(:first-of-type) {
+  background-color: yellow;
+}
