@@ -1,0 +1,31 @@
+/* Block Element > Các thẻ ở trạng thái mặc định, luôn 
+chiếm 100% chiều rộng của thẻ cha bất kể nội
+dung dài hay ngắn : ví dụ div, p, h1, h2, ul, ol, ..... */
+
+/* Inline Element > hộp có kích thước phụ thuộc 
+vào nội dung bên trong nó
+ví dụ: a,strong, em , button, ... */
+
+/* Inline - Block > Là sự kết hợp của 2 khối inline và block */
+
+/* Thẻ block luôn chiếm hết 100% chiều ngang của thẻ cha chứa nó */
+
+/* Chú ý: 1 số thuộc tính CSS không áp dụng được với inline element
+1 - padding-top, padding-bottom 
+2 - margin-top, margin-bottom
+3 - width, height , min-width, min-height
+*/
+
+/* body{
+    width: 650px;
+} */
+
+strong {
+  /* padding: 30px; */
+  margin: 30px;
+  /* height: 100px;
+  width: 100px; */
+  background-color: blue;
+  /* thẻ strong mặc định display: inline; */
+  display: inline-block;
+}
