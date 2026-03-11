@@ -1,0 +1,43 @@
+/* 1. rgb
+2. rgba
+3. hệ màu hex (thập lục phân) -> #rrggbb
+4. Color name
+5. currentcolor (Dùng màu hiện tại) */
+
+h1 {
+  /* color: rgb(161, 65, 187); */
+  /* color: rgb(161,65,187); */
+  /* 0-255 */
+
+  /* Kênh rgba */
+  /* dùng rgb mà 4 phần tử vẫn hiểu rgba */
+  /* color: rgb(255, 0, 0, 0.5); */
+  /* color: rgb(255 0 0 / 0.5);
+  background-color: blueviolet; */
+
+  /* color: #1050cc; */
+  /* color: #ff00ff; */
+  /* Trùng nhau thì rút gọn */
+  color: #f0f;
+  color: #c2d;
+  color: #e7e7e7;
+  color: deeppink;
+  
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  color: pink;
+  /* Sử dụng màu sắc hiện tại */
+  /* background-color: currentColor; */
+  outline: 5px solid currentColor;
+  outline-offset: 5px;
+}
+
+.box_child{
+  width: 50px;
+  height: 50px;
+  background-color: currentColor;
+}
+
