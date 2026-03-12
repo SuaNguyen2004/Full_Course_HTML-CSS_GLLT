@@ -1,0 +1,33 @@
+/* 12. Thuộc tính white-space Quy định về khoảng trắng khi code
+
+Ngoại trừ thẻ <pre></pre> Giữ nguyên định dạng code
+> 1 khoảng trắng
+> 1 khoảng trắng
+> Xuống dòng
+
+white-space: normal trạng thái mặc định
+white-space: nowrap không xuống dòng( kể cả chạm tới lề )
+white-space: pre giữ nguyên định dạng code, giống thẻ pre */
+
+/* white-space: pre-line -> giữ định dạng theo line(enter)
+- Tất cả dấu khoảng trắng thừa mỗi dòng trong nội dung văn bản sẽ bị loại bỏ.
+- Dòng mới (xuống dòng) được giữ nguyên */
+
+/* p {
+  font-size: 24px;
+  white-space: normal;
+  white-space: nowrap;
+  white-space: pre;
+  white-space:pre-line;
+  white-space: pre-wrap;
+} */
+
+/* 13. Thuộc tính word-break
+Khi đoạn text hoặc link dài, người dùng nhập liền nhau thì 
+có thể gây vỡ giao diện vì text không bị xuống dòng.
+Có thể dùng thuộc tính word-break: break-all để bẻ xuống hàng */
+
+p{
+  background-color: yellow;
+  word-break: break-all;
+}

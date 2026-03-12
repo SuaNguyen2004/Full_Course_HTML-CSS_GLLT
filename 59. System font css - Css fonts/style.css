@@ -1,0 +1,12 @@
+/* Có rất nhiều font chữ đẹp, tuy nhiên không phải font chữ nào cũng sẵn có trên máy khách > Cần đặt
+font chữ nhất quán phòng cả trường hợp máy khách không có font chữ này */
+
+/* Nhúng font chữ, sử dụng trên trang web để bất cứ máy nào cũng hiển thị giống nhau, kể cả trường hợp
+máy khách không cài đặt font này */
+
+/* System Fonts with system-ui */
+body {
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}

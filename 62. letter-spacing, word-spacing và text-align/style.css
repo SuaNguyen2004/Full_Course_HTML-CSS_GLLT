@@ -1,0 +1,29 @@
+/* Thuộc tính letter-spacing tăng giảm khoảng cách giữa các ký tự
+Thuộc tính word-spacing tăng giảm khoảng cách giữa các từ */
+
+/* Thuộc tính text-align Căn text */
+/* text-align: justify; căn dàn đều hai bên
+text-align: left; căn trái- mặc định
+text-align: right; căn phải
+text-align: center; căn giữa */
+
+/* Thuộc tính text-align Chỉ căn text so với box chứa nó
+Lưu ý với các thẻ inline hoặc inline block. */
+
+/* body{
+  text-align: center;
+} */
+
+p {
+  /* letter-spacing: -3px; */
+  /* word-spacing: 50px; */
+  text-align: left;
+  /* text-align: justify; */
+  /* text-align: right; */
+  /* text-align: center; */
+}
+
+.home {
+  text-align: center;
+  display: block;
+}

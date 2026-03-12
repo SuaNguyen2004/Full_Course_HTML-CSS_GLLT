@@ -1,0 +1,35 @@
+/* 9. Thuộc tinh text-decoration
+text-decoration: none; bỏ gạch chân
+text-decoration: underline; thêm gạch chân
+text-decoration: line-through; thêm gạch ngang
+text-decoration: overline; gạch trên đầu
+
+có thể định kiểu của dấu gạch, màu sắc, kích thước
+text-decoration: underline dotted blue 5px;
+
+10. Thuộc tinh text-indent thut lề
+text-indent: -40px; Thụt lề -40px
+text-indent: 40px; Thụt lề 40px */
+
+/* 11. Thuộc tinh text-transform
+text-transform: capitalize; Viết hoa chữ cái đầu
+text-transform: lowercase; viết thường toàn bộ text
+text-transform: uppercase; Viết hoa toàn bộ text */
+
+strong{
+  /* text-decoration: none;
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: overline; */
+
+  /* text-decoration: overline line-through; */
+  text-decoration: underline dotted blue 10px;
+
+}
+
+.line{
+  text-indent: 40px;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}

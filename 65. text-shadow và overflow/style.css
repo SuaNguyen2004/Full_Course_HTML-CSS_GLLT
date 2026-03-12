@@ -1,0 +1,35 @@
+/* 14. Thuộc tính text-shadow Bóng đổ text */
+/* text-shadow : 0px 0px 0px red
+-> horizontal : trục ngang theo trục toạ độ
+-> vertical : trục dọc theo trục toạ độ
+-> Blur : độ nhoè
+-> Color */
+
+/* 15. overflow
+Visible (default): Thuộc tính mặc định: hiển thị nội dung kể cả vượt box chứa
+hidden: ẩn nội dung : khi nội dung vượt box chứa
+scroll: Tạo thanh cuộn : luôn hiển thị vùng thanh cuốn
+auto:
+Tạo thanh cuộn : luôn hiển thị vùng thanh cuốn
+1. Nếu nội dung ngắn > Không có scroll bar
+2. Nếu nội dung vượt box chứa > Tự động sinh ra scroll bar
+*/
+
+h1 {
+  margin: 40px;
+  /* text-shadow: ngang, dọc, blur, màu; */
+  text-shadow: 0px -20px 0px rgba(255, 0, 0, 0.388);
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+  overflow: scroll;
+  overflow: auto;
+}
+
+/* 
+p{
+  white-space: nowrap;
+} */

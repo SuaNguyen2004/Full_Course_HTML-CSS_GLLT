@@ -1,0 +1,26 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto Slab", serif;
+}
+
+/* Thuộc tính font-weight : độ dày của chữ (thường từ 100-900) */
+
+/* Thuộc tính line-height: Chiều cao dòng - Mẹo căn giữa */
+p{
+    /* bấm Ctr + Space để hiển thị lại gợi ý */
+    /* font-weight: lighter; */
+    font-size: 40px;
+    line-height: 1.5;
+    line-height: 150%;
+    /* line-height: 24px; */
+}
+
+h1{
+  height: 120px;
+  background-color: blue;
+  line-height: 110px;
+}

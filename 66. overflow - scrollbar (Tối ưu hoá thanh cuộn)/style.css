@@ -1,0 +1,39 @@
+/* overscroll-behavior: Là một thuộc tính CSS được sử dụng để 
+điều chỉnh cách trình duyệt xử lý sự kiện "overscrolling", tức là khi
+người dùng cuộn trang đến khi không còn nội dung để cuộn nữa. */
+
+/* 
+auto:	Scroll truyền sang phần tử cha (mặc định)
+contain: Không truyền scroll ra ngoài
+none:	Không truyền scroll + tắt hiệu ứng overscroll 
+*/
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+/* width: độ rộng của scrollbar */
+.box::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track: Hộp cuộn */
+.box::-webkit-scrollbar-track {
+  background: #00ff1a;
+  border-radius: 5px;
+}
+
+/* Handle: thanh cuốn */
+.box::-webkit-scrollbar-thumb {
+  background: #e01717c6;
+  border-radius: 5px;
+}
+
+/* Handle on hover: thanh cuốn khi chạm, di chuột vào */
+.box::-webkit-scrollbar-thumb:hover {
+  background: #c500fc;
+}
