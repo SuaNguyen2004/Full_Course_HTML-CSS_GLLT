@@ -1,0 +1,17 @@
+/* Ảnh đầu tiên hiện trước nên chọn .png nền trong suốt vuông vuông */
+.box {
+  height: 100vh;
+  /* background-image: url(./bg/anhnen.jpg); */
+  background-image: url(./bg/lacay.png), url(./bg/images.jpg);
+  /* Bỏ hiển thị hình nền */
+  /* background-image: none; */
+
+  /* Không lặp lại */
+  /* background-repeat: no-repeat; */
+  /* Lặp theo trục x */
+  /* background-repeat: repeat-x; */
+  /* Lặp theo trục y */
+  /* background-repeat: repeat-y; */
+  /* Lặp theo cả trục x, y (Mặc định) */
+  /* background-repeat: repeat; */
+}

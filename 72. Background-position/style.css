@@ -1,0 +1,25 @@
+.box{
+  width: 400px;
+  height: 200px;
+  border: 5px dashed blue;
+  background-image: url(https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/186619/Originals/meme-anh-cho-hai-27.jpg);
+  background-position: top right;
+  background-position: top left;
+  background-position: bottom left;
+  background-position: bottom right;
+  background-position: top;
+  background-position: bottom;
+  background-position: left;
+  background-position: right;
+  background-position: center;
+  /* trái trên : 0%,0%, trái dưới: 0 100,  phải trên: 100 0, phải dưới: 100 100*/
+  background-position: -10% 0%;
+  background-repeat: no-repeat;
+  /* Truyền tuyệt đối bằng px: số dương thì cách lề */
+  background-position: 0 0;
+}
+
+img{
+  width: 100%;
+  margin-top: 50px;
+}

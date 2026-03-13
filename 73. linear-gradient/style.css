@@ -1,0 +1,32 @@
+.box {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* 2. Background-image: linear-gradient Direction - điều hướng chuyển màu */
+/* background-image: linear-gradient(direction, color-stop1, color-stop2, ... ); */
+/* direction : không nhập mặc định top -> bottom */
+/* to top left, to top, to top right, to left,
+to right, to bottom left, to bottom, to bottom right */
+
+.box2 {
+  /* Phải truyền vào ít nhất 2 màu*/
+  background-image: linear-gradient(to bottom, red, blue);
+}
+
+.box3 {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+
+.box1 {
+  width: 300px;
+  height: 300px;
+  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ... ); */
+  /* background-image: linear-gradient(62deg, red 0%, blue 100%) */
+  /* % không áp dụng chuyển sắc từng màu */
+  /* background-image: linear-gradient(red 40%, blue 70%); */
+  background: #3f5efb;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}

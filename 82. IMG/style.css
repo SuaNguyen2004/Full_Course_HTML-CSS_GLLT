@@ -1,0 +1,61 @@
+/* Pseudo elements: Phần tử giả */
+/* 1. p::first-line: Chọn dòng đầu tiên các thẻ <p> */
+/* Thuộc tính này không áp dụng được
+với thẻ inline (Display: inline;)
+Áp dụng được với thẻ block và
+inline-block */
+
+/* 2. p::first-letter: Chọn chữ cái đầu tiên các thẻ <p> */
+
+/* 3. p::selection: Chọn vùng đang được bôi đen các thẻ <p> */
+
+/* 4. li::marker: Chọn các điểm đánh dấu của các phần từ li */
+
+/* 5. .box::before: Thêm phần tử vào đằng trước class box */
+
+/* 6. .box::after: Thêm phần tử vào đằng sau class box */
+
+p::first-line {
+  color: red;
+}
+
+span {
+  /* display: inline-block; */
+  display: inline;
+}
+
+span::first-line {
+  color: blue;
+  background-color: yellow;
+}
+
+p::first-letter {
+  font-size: 40px;
+  color: blue;
+}
+
+/* không viết j đằng trước mặc định là * */
+::selection {
+  background-color: brown;
+  color: #fff;
+}
+
+li::marker {
+  font-size: 40px;
+  color: red;
+}
+
+.box::before {
+  content: "Em ở trước nè";
+}
+
+.box::after {
+  /* content: "Em ở sau nè"; */
+  display: block;
+  content: "";
+  width: 100px;
+  height: 5px;
+  color: red;
+  background-color: blue;
+  border-radius: 999px;
+}

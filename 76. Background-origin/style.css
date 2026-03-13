@@ -1,0 +1,22 @@
+/* 5. Background- origin : Xác định gốc bức ảnh đặt ở vị trí nào
+Border-box: Gốc 0,0 của ảnh sẽ ở border
+padding-box: Default - Gốc ảnh mặc định ở phần padding
+Content-box: Gốc 0,0 của ảnh sẽ ở phần content */
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-image: url(./bg/1.PNG);
+  border: 50px dotted red;
+  padding: 50px;
+  /* background-clip: content-box; */
+  /* Gốc của ảnh */
+  background-origin: padding-box;
+  background-origin: border-box;
+  background-origin: content-box;
+
+  /* ảnh nền đổ từ đâu */
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+}

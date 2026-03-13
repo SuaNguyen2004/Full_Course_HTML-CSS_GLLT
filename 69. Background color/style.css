@@ -1,0 +1,22 @@
+body{
+  background-color: aqua;
+}
+
+
+/* 1. Background-color: Nền sẽ đổ vào toàn bộ các phần tính vào kích thước phần tử
+( border, padding, content ) */
+
+
+.box{
+  color: yellow;
+  width: 250px;
+  height: 250px;
+  background-color: transparent; /* Mặc định */
+  background-color: red;
+  background-color: rgba(0, 0, 255, 0.541);
+  background-color: #a7a7a7;
+  background-color: currentColor;
+  margin: 45px;
+  padding: 20px;
+  border: 20px dotted red;
+}

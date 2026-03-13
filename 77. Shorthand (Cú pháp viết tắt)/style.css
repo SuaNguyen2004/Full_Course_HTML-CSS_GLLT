@@ -1,0 +1,64 @@
+.box {
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  width: 200px;
+  height: 200px;
+  border: 50px dotted rgb(0, 255, 38);
+  padding: 50px;
+
+  /* background-color: cyan; */
+  /* background-image: url(./bg/1.PNG); */
+  /* background-position: Vị trí bắt đầu đặt ảnh */
+  /* background-position: top right;
+  background-position: top left;
+  background-position: bottom left;
+  background-position: bottom right;
+  background-position: left;
+  background-position: right;
+  background-position: top;
+  background-position: bottom;
+  background-position: center; */
+
+  /* background-position: Đơn vị % */
+  /* background-position: 0 100%; */
+  /* background-position: Đơn vị tuyệt đối */
+  /* background-position: 0 100px; */
+
+  /* background-size: mặc định hiển thị ảnh theo kích thước thật, tỷ lệ 1:1 */
+  /* background-size: contain; */
+  /* background-size: cover; */
+
+  /* background-repeat: */
+  /* background-repeat default */
+  /* background-repeat: repeat; */
+  /* background-repeat: no-repeat; */
+
+  /*background-origin Xác định gốc bức ảnh đặt ở vị trí nào*/
+  /* background-origin: padding-box; */
+  /* background-origin: border-box; */
+  /* background-origin: content-box; */
+
+  /* background-clip */
+  /* ảnh đổ từ border hất vào trong mặc định*/
+  /* background-clip: border-box; */
+  /* ảnh đổ từ padding hất vào trong*/
+  /* background-clip: padding-box; */
+  /* ảnh đổ phần content*/
+  /* background-clip: content-box; */
+
+  /* background-attachment: mặc định anh bị cuốn theo thanh cuộn */
+  /* background-attachment: scroll; */
+  /* background-attachment: fixed anh co định khi kéo scroll */
+  /* background-attachment: fixed; */
+  /* background-attachment: anh co đinh khi keo scroll trong box con */
+  /* background-attachment: local; */
+
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  background: red;
+  background: red url(./bg/1.PNG);
+  background: red url(./bg/1.PNG) left;
+  background: red url(./bg/1.PNG) left / contain;
+  background: red url(./bg/1.PNG) left / cover no-repeat;
+  background: red url(./bg/1.PNG) left / cover no-repeat padding-box;
+  background: red url(./bg/1.PNG) left / cover repeat padding-box border-box;
+  background: red url(./bg/1.PNG) left / cover repeat padding-box border-box fixed;
+}

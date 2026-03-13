@@ -1,0 +1,22 @@
+/* 20. Xử lý ảnh:
+1. Đặt giới hạn kích thước cho ảnh
+2. Căn giữa ảnh
+3. Lazy load
+- Sử dụng để tối ưu trang web, trong trường hợp nội dung trang web dài, việc load toàn bộ ảnh
+ngay từ khi truy cập là không cần thiết
+-> Lazy load : Giúp hỗ trợ chỉ tải ảnh khi người dùng cuộn gần đến phần nội dung hình ảnh */
+
+/* -> Khi sử dụng Lazy load: Ảnh chưa load khi người dùng chưa di chuyển đến đoạn văn bản chứa ảnh */
+
+.demo {
+  max-width: 70%;
+  /* Mẹo căn giữa */
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  max-width: 700px;
+  background-color: aqua;
+  margin: 0 auto;
+}
