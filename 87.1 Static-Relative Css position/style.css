@@ -1,0 +1,49 @@
+/* 1. Position: Static
+- Thuộc tính Position Cho phép điều chỉnh vị trí các phần tử trên trang web.
+Position : Static -> Đây là giá trị mặc định của position
+-> Các phần tử HTML mà chúng ta đã biết có vị trí cố định trên trang khi chưa can thiệp bằng CSS */
+
+/* 2. Position: Relative
+Position: Relative -> Định vị so với vị trí ban đầu của nó 1 khoảng x:
+- left ( cách lề trái ban đầu 1 khoảng x)
+- right ( cách lề phải ban đầu 1 khoảng x)
+- top (cách lề trên ban đầu 1 khoảng x)
+- bottom ( cách lề dưới ban đầu 1 khoảng x)
+Tuy nhiên, không có bất kỳ không gian mới nào được tạo ra để chứa 
+phần tử được định vị theo kiểu này, vì vậy các phần tử khác trong trang web 
+vẫn có thể bị che khuất bởi phần tử được định vị theo kiểu relative. */
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  /* căn giữa text ở các khối */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1{
+  background-color: red;
+  /* position: static; */
+}
+
+.box2{
+  background-color: blue;
+  position: relative;
+  /* left: 50px; */
+  /* right: 50px; */
+  /* top: 50px; */
+  bottom: 50px;
+  right: 30px;
+}
+
+.box3{
+  background-color: green;
+  /* Vị trí cũ vẫn bị chiếm chỗ */
+  position: relative;
+  bottom: 50px;
+}
+
+h1{
+  background-color: purple;
+}

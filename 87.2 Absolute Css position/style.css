@@ -1,0 +1,51 @@
+/* 3. Position: Absolute
+Position : Absolute -> Phần tử thực sự được đưa ra khỏi luồng ban đầu
+1. Nếu không có tổ tiên có position: relative thì phần tử được định vị theo top left corner webpage
+2. Phần tử được định vị theo tổ tiên gần nhất đặt position là relative */
+
+/* Absolute -> TH1: Nếu không co tổ tien co postion: relative thì phần tử 
+được định vị theo top left corner webpage */
+/* Absolute -> TH2: Phần tử được định vị theo tổ tiên gần nhất đặt position là relative */
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  /* căn giữa text ở các khối */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  background-color: yellow;
+  /* position: relative; */
+}
+
+.content{
+  background-color: cyan;
+  width: 400px;
+  margin: 40px;
+  /* position: relative; */
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: blue;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  /* width: 50px;
+  height: 50px; */
+}
+
+.box3 {
+  background-color: green;
+}
+
+h1 {
+  background-color: purple;
+}

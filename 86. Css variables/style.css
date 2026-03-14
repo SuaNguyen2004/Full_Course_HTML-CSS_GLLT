@@ -1,0 +1,80 @@
+/* 6. CSS Variables
+Khi 1 giá trị css dùng đi dùng lại nhiều lần, ta có thể gán biến cho nó để tái sử dụng */
+
+/* Cú pháp: --tên_biến: giá trị 
+Sau khi khai báo biến: gọi tên thuộc tính bình thường
+và thay vì gán giá trị trực tiếp thì dùng: var(tên_biến)
+*/
+
+/* khai báo :root hoặc html sẽ áp dụng cho toàn trang */
+html {
+  --box-height: 150px;
+  --box-color: red;
+}
+
+.box1 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+
+.box2 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+  /* font-size: var(--p_font-size); Không áp dụng được */
+}
+
+.box3 {
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin-bottom: 10px;
+}
+
+/* 3. có thể bị ghi đè theo thứ tự ưu tiên */
+.box3 {
+  height: 200px;
+}
+
+/* 2. Khai báo trong phần tử nào thì sẽ áp dụng được
+cho phần tử đó và các cấp thấp hơn(con của nó) */
+
+.detail {
+  --p_font-size: 30px;
+  /* font-size: 30px; */
+  /* font-size: var(--p_font-size); */
+}
+
+.detail span {
+  font-size: var(--p_font-size);
+}
+
+/* 4.Giá trị backup của biến */
+.content {
+  --background-box: red;
+}
+
+.box4 {
+  height: 100px;
+  /* Nếu biến trước nó không hoạt động hoặc không tìm thấy 
+  giá trị biến nào khớp với giá trị truyền vào thì sẽ sử dụng giá trị dự phòng  */
+  background-color: var(--background-box, purple); /* backup or fallback*/
+}
+
+/* .box1{
+  height: 110px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+}
+
+.box2{
+  height: 110px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+}
+
+.box3{
+  height: 110px;
+  background-color: #0f0;
+  margin-bottom: 10px;
+} */

@@ -1,0 +1,41 @@
+/* 5. Position : Fixed
+Fixed -> Fix cứng phần tử theo viewport (vùng hiển thị 
+nội dung trên màn hình của trình duyệt web ) */
+
+.mes-bottom a{
+  font-size: 2rem;
+  color: #0266ff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* left: 0;
+  top: 0; */
+}
+
+.nav{
+  /* width: 500px; */
+  background-color: #555;
+  position: fixed;
+  /* left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; */
+  /* inset: 50px 100px 150px 50px; */
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+h1{
+  margin-top: 51px;
+}
