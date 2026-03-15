@@ -1,0 +1,58 @@
+/* 1. Page layout:
+- Page Layout: Còn gọi là Bố cục - dàn trang
+cơ bản là cách ta xếp đặt khối bố cục con
+(component layout) lên trên webpage
+- Việc xếp đặt giúp cho trang web nhìn đẹp, thu
+hút người xem, và truyền tải nội dung 1 cách có
+trật tự, logic */
+
+/* 2. component layout :
+Các component layout là các bố cục
+con, nơi mà : text, images, video ...
+và các nội dung khác được xếp đặt */
+
+/* 3. 3 cách phổ biến để xây dựng layout với CSS
+- Float layouts
+- Flexbox
+- Css grid */
+
+/* 1. Khái quát về Float layout
+Như đã nói: Trên 1 page layout có nhiều
+component layout
+Float layout có thể giúp dàn trang theo chiều
+ngang, hoặc chữ bao quanh ảnh như ví dụ bên. */
+
+/* 2. Cách sử dụng Float layout */
+
+/* Khi sử dụng thuộc tính float: left, image bị trôi khỏi luồng bình thường,
+các phần tử còn lại sẽ bao quanh phần tử image
+Trong trường hợp muốn 1 phần tử nào đó không bị chèn ép để bao quanh hình. Ta cần sử dụng:
+clear: left; ( clear giá trị float bên trái )
+clear: right; ( clear bên phải )
+clear: both; ( clear ca 2 hướng) */
+
+/* 3. Float layout đã cũ, và phức tạp khi trang web nhiều thành phần, trong trường hợp ta muốn
+xây dựng 1 giao diện phức tạp người ta dùng các phương pháp khác tối ưu hơn */
+
+/* Ngày nay : Trong thiết kế hiện đại, lập
+trình viên thường không sử dụng thuộc
+tính float mà dùng các công cụ tốt hơn-
+ví dụ:
+1. Flexbox
+2. CSS Grid
+3. External Frameworks : Bootstrap */
+
+.pic1 {
+  width: 200px;
+  /* float: left; */
+  float: left;
+}
+
+.pic2 {
+  width: 200px;
+  float: right;
+}
+
+p:last-child {
+  clear: both;
+}

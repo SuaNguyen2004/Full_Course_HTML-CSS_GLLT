@@ -1,0 +1,42 @@
+/* 3.3 flexbox - flex-wrap: */
+/* flex-wrap: 
+- nowrap : default
+- wrap : nếu chiều rộng của ptu con vượt quá ch rộng của 
+cha nó thì sẽ tự động xuống hàng
+- wrap-reverse : xuống hàng + đảo ngược
+ */
+
+/* 3.3 flexbox - align-content: Sử dụng kèm với flex-wrap, 
+dùng để căn nhiều hàng theo cross axis */
+/* align-items: dùng cho 1 hàng
+align-content: dùng cho 2 hàng trở lên */
+
+/* 
+flex-start: tất cả item dồn lên phía cross start của thẻ cha
+flex-end: tất cả item dồn xuống phía cross start của thẻ cha
+center : căn giữa theo trục cross
+stretch (default): kéo giãn các phần tử ra
+space-between: các hàng cách đều nhau, sát lề
+space-around: khoảng trống xung quanh các phần tử = nhau theo cross và cách lề
+*/
+
+.container {
+  height: 400px;
+  display: flex;
+  background-color: cyan;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  align-content: space-between;
+}
+
+.box {
+  width: 30%;
+  background-color: blue;
+  border: 1px solid black;
+}

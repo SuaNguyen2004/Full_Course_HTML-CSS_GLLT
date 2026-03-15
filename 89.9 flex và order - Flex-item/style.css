@@ -1,0 +1,57 @@
+/* 3.11 flex : flex-grow flex-shrink flex-basis
+Đây là cách viết tắt sử dụng đồng thời 3 thuộc tính
+
+1.flex-grow: 0 ( default) | 1 | 2 | ... Chia tỷ lệ gin chiếm theo trọng số
+2.flex-shrink: 0- không bị co lại | 1 ( default) | 2 | 3 | ... Xác định khả năng
+co lại của item để thích nghi với không gian hạn chế
+3.flex-basis: Set main size item - Theo trục main axis */
+
+/* Kích thước của item tuân theo quy tắc
+1. Content width (ưu tiên thấp nhất)
+2. Width
+3 - flex-basis
+4 - min-width/ max-width (ưu tiên cao nhất) */
+
+/* 3.12 order default is 0: Thay đổi thứ tự các item */
+
+
+.container {
+  display: flex;
+}
+
+.box {
+  /* flex-basis: 100px; */
+  /* width: 100px; */
+  /* max-width: 200px; */
+
+  /* 
+  1. nếu max-width < flex-basis -> max-width
+  2. nếu max-width > flex-basis -> flex-basis 
+  */
+  /* min-width: 200px; */
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100px;
+
+  /* flex: 1 1 100px; */
+  flex: 1;
+}
+
+.box1 {
+  background-color: cyan;
+}
+
+.box2 {
+  background-color: red;
+  order: 1;
+}
+
+.box3 {
+  background-color: blue;
+  order: 2;
+}
+
+.box4 {
+  background-color: green;
+}

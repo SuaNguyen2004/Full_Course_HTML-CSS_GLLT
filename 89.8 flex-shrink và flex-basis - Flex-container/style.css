@@ -1,0 +1,29 @@
+/* 3.9 Flex-shrink : 0- không bị co lại | 1 ( default) | 2 | 3 | ... 
+Xác định khả năng co lại của item nếu cần */
+
+/* 3.10 flex-basis : Set main size item ( luu ý main size theo trục main axis ) */
+/* Khi xoay trục main axis : flex-direction: column; */
+
+/* Ở các bài trước chúng ta đã được học là : Trục của main axis và cross axis có thể bị xoay, nếu dùng thuộc
+tính flex-direction: column; Ví dụ dưới đây giải thích tính ứng biến của item khi bị xoay trục */
+
+
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  /* flex-wrap: wrap; */
+  /* overflow: auto; */
+}
+
+.box {
+  background-color: blue;
+  border: 1px solid black;
+  width: 30%;
+  /* flex-shrink: 0; */
+}
+
+.box1,
+.box2 {
+  flex-shrink: 1;
+}

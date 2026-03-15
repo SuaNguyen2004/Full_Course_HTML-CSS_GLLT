@@ -1,0 +1,16 @@
+/* 3.5 flex-flow: flex-wrap flex-direction Cú pháp viết tắt */
+
+.box {
+  background-color: blue;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  background-color: cyan;
+  /* flex-wrap: wrap;
+  flex-direction: row-reverse; */
+  /* viết tắt */
+  flex-flow: wrap row;
+}

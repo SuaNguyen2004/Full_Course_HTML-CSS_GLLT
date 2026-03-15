@@ -1,0 +1,43 @@
+/* 3.2 flexbox - align-items : stretch; - mặc định, kéo giãn các phần tử bằng container (theo trục cross)
+flex-start: các item dồn lên trên theo trục cross
+flex-end: các item dồn xuống dưới theo trục cross
+center: các item dồn nằm giữa theo trục cross
+stretch: default
+baseline: Căn theo chân phần tử (ít dùng)
+ */
+
+body{
+  margin: 0;
+}
+
+*{
+  font-size: 1.5rem;
+}
+
+.container{
+  height: 300px;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-items: baseline; */
+
+  background-color: cyan;
+}
+
+.box{
+  background-color: blue;
+}
+
+.box1{
+  height: 200px;
+  font-size: 3rem;
+}

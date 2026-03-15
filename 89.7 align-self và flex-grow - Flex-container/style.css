@@ -1,0 +1,21 @@
+/* 4. Các nhóm thuộc tính flexbox -> Nhóm Flex-Item */
+/* 3.7 align-self: flex-start| flex-end | center | baseline | stretch; */
+/* 3.8 flex-grow : 0 (default) | 1 | 2 | ... Chia tỷ lệ chiếm theo trọng số */
+
+
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.box2,
+.box3 {
+  align-self: flex-end;
+}

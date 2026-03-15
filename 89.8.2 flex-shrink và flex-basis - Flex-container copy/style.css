@@ -1,0 +1,16 @@
+/* 3.10 flex-basis : Set main size item ( luu ý main size theo trục main axis ) */
+/* Khi xoay trục main axis : flex-direction: column; */
+
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  flex-direction: column;
+}
+
+.box {
+  /* width: 30%; */
+  flex-basis: 30%;
+  background-color: blue;
+  border: 1px solid black;
+}

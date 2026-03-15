@@ -1,0 +1,30 @@
+/* 2. Cách sử dụng: flexbox */
+/* Flex-Container: nhóm thuộc tính khai báo trong class cha container
+justify-content
+align-items
+flex-wrap
+align-content
+flex-direction
+flex-flow */
+
+/* Flex-Item: khai báo trong class hoặc các ptu con
+align-self
+flex-grow
+flex-shrink
+flex-basis
+order
+flex */
+
+*{
+  font-size: 1.5rem;
+}
+
+.container{
+  display: flex;
+  background-color: cyan;
+  gap: 40px;
+}
+
+.box{
+  background-color: blue;
+}
