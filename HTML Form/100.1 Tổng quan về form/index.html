@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>100.1 label and for</title>
+    </head>
+    <body>
+        <!-- cái autocomplete="off" có thể viết cùng dòng vs form làm cho cả form không đề xuất giá trị trước đó -->
+        <form action="">
+            <label for="username">Username:</label>
+            <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Nguyen Van Nam"
+                required
+                autocomplete="off" />
+
+            <br />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Nhap pass" required />
+
+            <label>
+                Email:
+                <input type="email" name="" id="" placeholder="email" />
+            </label>
+
+            <br />
+            <br />
+            <input type="submit" value="Send" />
+        </form>
+    </body>
+</html>
