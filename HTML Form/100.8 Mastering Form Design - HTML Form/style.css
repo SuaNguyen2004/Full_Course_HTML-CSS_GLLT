@@ -1,0 +1,28 @@
+/* input: placeholder-shown - Chon cac the input co placeholder đang được hien thị
+-> hay nói cách khác là các thẻ input chưa được nhập liệu */
+
+/* 
+Pseudo-class : focus-within Được sử dụng để chọn phần tử cha chứa một phần tử đang
+được focus.
+Nó kích hoạt khi bất kỳ phần tử con nào của phần tử cha đang được "focus," tức là người
+dùng đã chọn một phần tử con của phần tử cha đó. */
+
+/* tabindex : sử dụng để kiểm soát thứ tự được "tab" qua các phần tử trên một trang web khi
+người dùng sử dụng phím tab trên bàn phím. */
+
+/* Khi placeholder của thẻ input đang hiển thị */
+input:placeholder-shown{
+  background-color: cyan;
+}
+
+input:not(:placeholder-shown){
+  background-color: yellow;
+}
+
+.login-form:focus-within{
+  background-color: blue;
+}
+
+.login-form:focus-within button{
+  background-color: red;
+}
